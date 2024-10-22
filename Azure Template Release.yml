@@ -4,13 +4,13 @@ resources:
   pipelines:
     - pipeline: _TemplatesCI
       # source: Template CI 3.0 
-      source: Template CI 3.0 - Harinder
+      source: Template CI 3.0
     - pipeline: _BuildImageReleaseArtefacts
       source: Build Image Release Artefacts 3.0
   repositories:
     - repository: _lansa_azure_quickstart_templates
       type: github
-      endpoint: nkhl-accolite
+      endpoint: Harinder-accolite
       name: lansa/azure-quickstart-templates
       ref: support/scalable
     # - repository: _robe070_cookbooks
@@ -21,7 +21,7 @@ resources:
     #   ref: debug/paas
     - repository: _robe070_cookbooks_nkhl
       type: github
-      endpoint: nkhl-accolite
+      endpoint: Harinder-accolite
       name: robe070/cookbooks
       ref: debug/paas
 
