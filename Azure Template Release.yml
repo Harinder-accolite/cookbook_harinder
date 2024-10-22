@@ -31,6 +31,36 @@ variables:
   - group: Image Names
   - group: Azure Logins
   - group: Git Repos
+  - name: Build-w12r2d-14-2
+    value: false
+  - name: Build-w12r2d-15-0
+    value: false
+  - name: Build-w16d-14-2
+    value: false
+  - name: Build-w16d-14-2j
+    value: false
+  - name: Build-w16d-15-0
+    value: false
+  - name: Build-w16d-15-0j
+    value: false
+  - name: Build-w19d-14-2
+    value: false
+  - name: Build-w19d-14-2j
+    value: false
+  - name: Build-w19d-15-0
+    value: false
+  - name: Build-w19d-15-0j
+    value: false
+  - name : CookbooksSource
+    value: $(System.DefaultWorkingDirectory)\cookbooks
+  - name: imageReleaseState
+    value: Production
+  - name: jpnLanguage
+    value: JPN
+  - name: LansaReleaseTemplateUrl
+    value: https://raw.githubusercontent.com/lansa/azure-quickstart-templates/sup
+  - name : SubscriptionId
+    value: 739c4e86-bd75-4910-8d6e-d7eb23ab94f3
 
 stages:
 # - template: AzureDevOps\templates\AzureTestandPRODTemplateValidation.yml
